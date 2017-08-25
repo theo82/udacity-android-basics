@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BookList</string>
+    <string name="error_no_internet">No internet connection available</string>
+    <string name="welcoming">Please search for a book</string>
+</resources>

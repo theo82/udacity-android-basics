@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">My City</string>
-    <string name="category_alcazar">Alcazar Park</string>
-    <string name="category_sports">Sports</string>
-    <string name="category_squares">Squares</string>
-    <string name="category_theatre">Ancient Theatre</string>
-</resources>

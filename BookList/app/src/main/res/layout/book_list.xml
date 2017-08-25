@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="98dp"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/image"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        />
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            style="@style/BookStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            tools:text="Gates of Paradise" />
+
+        <TextView
+            android:id="@+id/author_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text_view"
+            android:ellipsize="end"
+            android:paddingLeft="14dp"
+            android:textColor="@color/author_text_color"
+            android:textSize="14sp"
+            tools:text="Published by " />
+
+        <TextView
+            android:id="@+id/publisher_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_text_view"
+            android:ellipsize="end"
+            android:paddingLeft="16dp"
+            android:textColor="@color/author_text_color"
+            android:textSize="14sp"
+            tools:text="Theo Tziomakas" />
+
+        <TextView
+            android:id="@+id/language_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_text_view"
+            android:ellipsize="end"
+            android:paddingLeft="16dp"
+            android:textColor="@color/author_text_color"
+            android:textSize="14sp"
+            tools:text="Theo Tziomakas" />
+
+
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:paddingRight="14dp"
+            android:textColor="@color/author_text_color"
+            android:textSize="14sp"
+            tools:text="2017" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
