@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.invetoryapp.EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:padding="16dp"
+                android:textColor="#2B3D4D"
+                android:textSize="22sp"
+                android:text="@string/edit_activity_name_title"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_activity_margin"
+                android:fontFamily="sans-serif"
+                android:text="@string/default_product_name"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:background="@color/colorPrimary"
+        android:id="@+id/image"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/product_price_title"
+            android:textColor="#2B3D4D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edit_activity_margin"
+            android:fontFamily="sans-serif"
+            android:inputType="numberDecimal"
+            android:text="@string/default_product_price"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Quantity"
+            android:textColor="#2B3D4D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/quantity_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edit_activity_margin"
+            android:fontFamily="sans-serif"
+            android:inputType="numberDecimal"
+            android:text="25"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:id="@+id/btn_save"
+            android:background="@drawable/ic_save_black_24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onSave"
+            android:padding="16dp"
+            android:text="@string/btn_save"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/btn_order"
+            android:background="@drawable/ic_email_black_24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onOrder"
+            android:padding="16dp"
+            android:text="@string/btn_save"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_delete_black_24dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:onClick="onDelete"
+            android:text="@string/btn_delete"
+
+            android:layout_alignTop="@+id/btn_save"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
