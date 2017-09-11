@@ -1,4 +1,4 @@
-**BookListingApp**
+**Book List App**
 
 An app that uses the Google Books Api. The network operation is done in a background thread and uses the AsyncTask Class. 
 
@@ -6,6 +6,20 @@ An app that uses the Google Books Api. The network operation is done in a backgr
 
 ![screenshot_1505109288](https://user-images.githubusercontent.com/7755518/30260266-00358d5c-96cf-11e7-86c6-2bb4c48aefe0.png)
 
+**Inventory App**
+
+An app that combines Content Providers and SQLite. 
+
+Content providers:
+
+1) Manage access to a structured set of data
+2) Good abstraction layer between data source & UI code ( can add data validation, can modify how data is stored and UI code is unaffected )
+3) Works well in other Android framework classes
+4) Can easily share data with other apps.
+
+Check this video to see how the app is working.
+
+https://www.youtube.com/watch?v=9EJnvLhVtGE&list=PL5BgP53rzYkiixvapGL6PUU2oxhvFaRmR&index=4
 
 **News APP**
 
