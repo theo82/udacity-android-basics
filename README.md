@@ -1,3 +1,5 @@
+**News APP**
+
 This app is using, the guardian news api(http://open-platform.theguardian.com/documentation/). The network operation is done in a background thread and uses Loaders. 
 
 No matter how many times you request data from a loader, by default the Loader will only fetch data once. Second when an activity shuts down, 
@@ -34,4 +36,7 @@ onCreateLoader() method to create and return a new Loader instance.
 onLoadFinished() method to receive the data once the Loader has finished.
 onLoaderReset() method to handle when the previously created Loader is no longer needed, and the existing data can be discarded. 
 
-To start a loader when the app is launched in the MainActivity onCreate() method, we should call getLoaderManager().initLoader(0, null, this).
+To start a loader when the app is launched in the MainActivity onCreate() method, we should call getLoaderManager().initLoader(0, null, this).
+
+![screenshot_1505107488](https://user-images.githubusercontent.com/7755518/30259568-c176ce40-96ca-11e7-8e38-0fb017540b1e.png)
+![screenshot_1505107495](https://user-images.githubusercontent.com/7755518/30259570-c1e15724-96ca-11e7-8370-7b51f57477de.png)
