@@ -28,7 +28,6 @@ import java.util.List;
 import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
 public class MainActivity extends AppCompatActivity{
-    //http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&orderby=time&minmag=6&limit=10"
     public static final String BOOK_URL = "https://www.googleapis.com/books/v1/volumes?";
     public static final String LOG_TAG = MainActivity.class.getName();
     BookAdapter adapter;
