@@ -7,6 +7,8 @@ An app that uses the Google Books Api. The network operation is done in a backgr
 
 ![screenshot_1505109288](https://user-images.githubusercontent.com/7755518/30260266-00358d5c-96cf-11e7-86c6-2bb4c48aefe0.png)
 
+Video link: https://www.youtube.com/watch?v=nKCMGkxsi2A&index=3&list=PL5BgP53rzYkiixvapGL6PUU2oxhvFaRmR
+
 **Inventory App**
 
 An app that combines Content Providers and SQLite. 
