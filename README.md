@@ -28,10 +28,10 @@ So how does the Loader get created? By implementing the LoaderCallbacks interfac
 
 *onLoaderReset()*: This method gets called when the previous created loader is being reset. 
 
-LoaderManager interacts with an activity to manage one or more Loader instances. In order for our Activity to be a client that interacts with the LoaderManager, we need EarthQuakeActivity to implement the LoaderManager.LoaderCallbacks interface. Then the activity must override the: 
+LoaderManager interacts with an activity to manage one or more Loader instances. In order for our Activity to be a client that interacts with the LoaderManager, we need MainActivity to implement the LoaderManager.LoaderCallbacks interface. Then the activity must override the: 
 
 onCreateLoader() method to create and return a new Loader instance.
 onLoadFinished() method to receive the data once the Loader has finished.
 onLoaderReset() method to handle when the previously created Loader is no longer needed, and the existing data can be discarded. 
 
-To start a loader when the app is launched in the EarthquakeActivity onCreate() method, we should call getLoaderManager().initLoader(0, null, this).
+To start a loader when the app is launched in the MainActivity onCreate() method, we should call getLoaderManager().initLoader(0, null, this).
